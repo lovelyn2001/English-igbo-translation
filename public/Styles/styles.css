@@ -1,0 +1,143 @@
+/* /public/css/styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.translator-box {
+    margin-top: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#englishInput {
+    width: 85%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    outline: none;
+}
+
+#microphoneBtn {
+    padding: 10px 16px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+#microphoneBtn:hover {
+    background-color: #218838;
+}
+
+.button-section {
+    margin-bottom: 20px;
+}
+
+#translateBtn {
+    padding: 12px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+#translateBtn:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+/* New Styling for the Output Textarea */
+.output-section {
+    margin-top: 20px;
+}
+
+#igboOutput {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    resize: none;
+    background-color: #f7f7f7;
+    color: #333;
+    outline: none;
+}
+
+#igboOutput:focus {
+    border-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    #englishInput {
+        width: 80%;
+    }
+
+    #translateBtn, #microphoneBtn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+#microphoneBtn.active {
+    background-color: #ffc107; /* Yellow when active */
+}
+
+.output-section {
+    margin-top: 20px; /* Space between translate button and output */
+}
+
+#output {
+    width: 100%; /* Ensure the output box takes the full width */
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    outline: none;
+    color: #007bff;
+    background: #f9f9f9; /* Light background for better visibility */
+}
